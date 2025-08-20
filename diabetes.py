@@ -4,7 +4,7 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import altair as alt
-import plotly.express as px
+#import plotly.express as px
 
 # Function definition
 def big_metric(label, value, emoji, bg_color="#dff0d8"):
@@ -316,4 +316,5 @@ for gender_label in ["Male", "Female"]:
             proportion = (count / total_n_gender) * 100 if total_n_gender > 0 else 0
             with col_obj:
                 big_metric3(label, count, proportion, emoji)
+
 
