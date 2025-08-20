@@ -22,7 +22,7 @@ def big_metric(label, value, emoji, bg_color="#dff0d8"):
 st.set_page_config(page_title="Diabetes Dashboard", layout="wide")
 #st.set_page_config(page_title="Diabetes", layout="centered")
 
-diabetes = pd.read_csv("C:\\Users\\Pushp\\OneDrive\\My Data\\Learning\\diabetes_data.csv")
+diabetes = pd.read_csv("diabetes_data.csv")
 
 # === Title of the page
 st.markdown(f"""
@@ -316,3 +316,4 @@ for gender_label in ["Male", "Female"]:
             proportion = (count / total_n_gender) * 100 if total_n_gender > 0 else 0
             with col_obj:
                 big_metric3(label, count, proportion, emoji)
+
